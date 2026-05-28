@@ -14,15 +14,15 @@ export default defineConfig({
           {
             text: '娱乐项目',
             items: [
-              { text: '迷宫', link: 'projects/1' },
-              { text: '`ADV`项目', link: 'projects/2' },
-              { text: '赚钱小游戏', link: 'projects/3' }
+              { text: '迷宫', link: '/projects/1' },
+              { text: 'ADV项目', link: '/projects/2' },
+              { text: '赚钱小游戏', link: '/projects/3' }
             ]
           },
           {
             text: '其他项目',
             items: [
-              { text: '其他', link: 'projects/other' }
+              { text: '其他', link: '/projects/other' }
             ]
           }
         ]
@@ -30,20 +30,20 @@ export default defineConfig({
     ],
 
     sidebar: {
-      './projects/':
+      '/projects/':
       [
         {
           text: '娱乐项目',
           items: [
-            { text: '迷宫', link: 'projects/1' },
-            { text: '`ADV`项目', link: 'projects/2' },
-            { text: '赚钱小游戏', link: 'projects/3' }
+            { text: '迷宫', link: '/projects/1' },
+            { text: 'ADV项目', link: '/projects/2' },
+            { text: '赚钱小游戏', link: '/projects/3' }
           ]
         },
         {
           text: '其他项目',
           items: [
-            { text: '其他', link: 'projects/other' }
+            { text: '其他', link: '/projects/other' }
           ]
         }
       ]
