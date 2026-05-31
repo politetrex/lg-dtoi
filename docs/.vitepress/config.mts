@@ -41,7 +41,8 @@ export default defineConfig({
             { text: '疑似退役', link: '/users/4' },
             { text: '缅怀退役', link: '/users/5' }
         ]
-      }
+      },
+      { text: '实时文件区', link: '/livefilearea' }
     ],
 
     sidebar: {
@@ -75,7 +76,14 @@ export default defineConfig({
                 { text: '缅怀退役', link: '/users/5' }
             ]
         }
-      ]
+      ],
+      '/livefilearea':
+      [
+        {
+            text: '实时文件区',
+            link: '/livefilearea'
+        }
+    ]
     },
 
     socialLinks: [
