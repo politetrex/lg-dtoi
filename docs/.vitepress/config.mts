@@ -42,6 +42,14 @@ export default defineConfig({
             { text: '缅怀退役', link: '/users/5' }
         ]
       },
+      {
+        text: '题单',
+        items: [
+            { text: '题单总览', link: '/tdn/all' },
+            { text: '补题题单', link: '/tdn/tdn1' },
+            { text: 'Special Judge 题目', link: '/tdn/tdn2' }
+        ]
+      },
       { text: '实时文件区', link: '/livefilearea' }
     ],
 
@@ -83,7 +91,18 @@ export default defineConfig({
             text: '实时文件区',
             link: '/livefilearea'
         }
-    ]
+      ],
+      '/tdn/':
+      [
+        {
+          text: '题单',
+          link: '/tdn/all',
+          items: [
+            { text: '补题题单', link: '/tdn/tdn1' },
+            { text: 'Special Judge 题目', link: '/tdn/tdn2' }
+          ]
+        }
+      ]
     },
 
     socialLinks: [
