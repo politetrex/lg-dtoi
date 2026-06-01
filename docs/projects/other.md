@@ -1,7 +1,7 @@
 # 其他文件
 
 ## MC
-[源码 .exe](https://dtoi-code.github.io/project/)/HMCL-3.13.1.exe
+[源码 .exe](https://dtoi-code.github.io/project/HMCL-3.13.1.exe)  
 本人直接干了一个MC 9.51MB 由于空间较大 14天后将下线
 
 ## 2048
