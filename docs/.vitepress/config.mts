@@ -50,7 +50,16 @@ export default defineConfig({
             { text: 'Special Judge 题目', link: '/tdn/tdn2' }
         ]
       },
-      { text: '实时文件区', link: '/livefilearea' }
+      // { text: '实时文件区', link: '/livefilearea' }
+      {
+        text: '更新日志',
+        items: [
+          {
+              text: 'V2.0',
+              link: '/changelog/2_0'
+          }
+        ]
+      }
     ],
 
     sidebar: {
@@ -85,6 +94,7 @@ export default defineConfig({
             ]
         }
       ],
+      /*
       '/livefilearea':
       [
         {
@@ -92,6 +102,7 @@ export default defineConfig({
             link: '/livefilearea'
         }
       ],
+      */
       '/tdn/':
       [
         {
@@ -101,6 +112,13 @@ export default defineConfig({
             { text: '补题题单', link: '/tdn/tdn1' },
             { text: 'Special Judge 题目', link: '/tdn/tdn2' }
           ]
+        }
+      ],
+      '/changelog':
+      [
+        {
+            text: 'V2.0',
+            link: '/changelog/2_0'
         }
       ]
     },
