@@ -7,7 +7,7 @@
 
 ## 2048
 由zhaolt2012搭建  
-[源码 .cpp](https://politetrex.github.io/DTOI-Files/Files/74a971ac3c0eef57a2bf81969599184692535876a18ea46bb5fa8e11b21f0269/2048[from zhaolt2013].cpp)  
+[源码 .cpp](https://politetrex.github.io/DTOI-Files/Files/74a971ac3c0eef57a2bf81969599184692535876a18ea46bb5fa8e11b21f0269/2048%5Bfrom%20zhaolt2013%5D.cpp)  
 [更新详情](https://www.luogu.com.cn/discuss/1244983)
 
 ## 跑酷
