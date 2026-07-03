@@ -1,0 +1,81 @@
+/* .vitepress/theme/custom.css */
+
+/* Background image */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://cdn.luogu.com.cn/upload/image_hosting/qer5jnsz.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.25;
+    z-index: -2;
+  }
+  
+  body {
+    background-color: transparent !important;
+  }
+  
+  /* Create a single overlay for everything */
+  #app {
+    background-color: rgba(255, 255, 255, 0.25);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Sidebar and navbar need special treatment */
+  .VPSidebar {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+  }
+  
+  .VPNavBar {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+    backdrop-filter: blur(8px);
+  }
+  
+  /* Make all content areas transparent */
+  .VPContent,
+  .VPFooter,
+  .VPDoc,
+  .VPPage,
+  .VPHome,
+  .VPDocAside,
+  .VPContent .VPDoc,
+  .VPContent .VPHome,
+  .layout,
+  .container,
+  .main {
+    background: transparent !important;
+  }
+  
+  /* Remove any margins that might create gaps */
+  .VPContent {
+    flex: 1;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  .VPFooter{
+    margin-top: 0 !important;
+    background: transparent !important;
+  }
+  
+  /* Dark mode */
+  .dark #app {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  
+  .dark .VPSidebar {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+  }
+  
+  .dark .VPNavBar {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    backdrop-filter: blur(8px);
+  }
