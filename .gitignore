@@ -1,1 +1,2 @@
-Files/_RAW
+docs/.vitepress/cache
+node_modules
