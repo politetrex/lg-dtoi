@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Button</title>
+</head>
+<body>
+    <script>
+        const filename="./赚钱小游戏2.1.cpp";
+
+        const a = document.createElement('a');
+        a.href = filename;
+        a.download = filename;
+        a.click();
+        const fileUrl = window.location.href.replace(/\/[^/]*$/, '/') + fileName;
+
+        fetch(fileUrl)
+            .then(response => {
+                if (!response.ok) throw new Error('文件获取失败');
+                return response.blob();
+            })
+            .then(blob => {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = fileName;  // 这里指定下载后的文件名
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+
+                // 下载触发后返回上一页
+                setTimeout(() => {
+                    window.history.back();
+                }, 1500);
+            })
+            .catch(err => {
+                document.body.innerHTML = `<p>下载失败：${err.message}，<a href="${fileUrl}" target="_blank">点击直接打开</a></p>`;
+            });
+    </script>
+</body>
+</html>
